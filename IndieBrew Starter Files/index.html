@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndieBrew</title>
+    <link rel="stylesheet" href="./stylesheet/style.css">
+</head>
+<body>
+    <header>
+        <img src="./Assets/Logo.svg" alt="IndieBrew's logo">
+        <a href="#" class="hamnav" onclick="openNav()">&#9776;</a>
+        <nav id="sidePanel" class="Sidenav">
+            
+            <ul >
+                <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            <button class="head"><b>Get Started</b> &dash; It's free</button>
+        </nav>
+    </header>
+    <main>
+        <img src="./Assets/Feed Mockup.png" alt="" class="feed">
+        <h1>Your weekly <br> personal feed digest.</h1>
+        <p class="subhead">With IndieBrew, get personal feeds from resources
+            all around the web, <br> including Reddit, HackerNews, IndieHackers, and much more.
+        </p>
+        <button class="tails"><b>Get Started</b>- It's free</button> <br>
+        <img src="./Assets/User Avatars.svg" alt="" class="ava">
+        <p class="blue">Join <span>32,642</span> IndieBrewers in curating their personal digest.</p>
+
+        <div class="main2">
+            <img src="./Assets/Social Media Icons.png" alt="" class="social">
+            <h3>Curate your feed from dozens of <br> resources</h3>
+            <p class="subtext">
+                We cover all major platforms where one could want to curate their feed <br>
+                from Reddit, ProductHunt, IndieHackers, and so much more.
+            </p>
+            <p class="link"><a href="#">See full list of resources &RightArrow;</a></p>
+            <img src="./Assets/Phone Mockup.png" alt="" class="phone">
+            <div class="submain">
+            <h2>Access your feed from the <br> comfort of your phone.</h2>
+            <p class="subhead2">With native apps for both iOS and Android.
+                accessing your curated <br>content has never been easier.
+            </p>
+            <p class="link"><a href="./sign.html">Sign up for the waitlist &RightArrow;</a></p>
+          </div>
+        </div>
+    </main>
+    <footer>
+        
+      <div class="footheader">
+        <div class="foottop">
+            <p class="p">IndieBrew</p>
+            <p class="foottext">With IndieBrew, get personal feeds from <br> resources
+                all around the web, including <br> Reddit, HackerNews, and so much more.</p>
+                <p class="down">Made with &hearts;  in the UK.</p>
+        </div> 
+        <div class="footmidd">
+        <div class="footmid">
+            <p class="p">Sitemap</p>
+            <a href="#">Homepage</a>
+            <a href="#">Pricing</a>
+        </div>
+        <div class="footmid2">
+            <p class="p">Resources</p>
+            <a href="#">Support</a>
+            <a href="#">Contact</a>
+            <a href="#">FAQ</a>
+        </div> 
+        </div>
+        <div class="footfoot">
+        <div class="footmid3">
+            <p class="p">Company</p>
+            <a href="#">About</a>
+            <a href="#" class="">Customers</a>
+            <a href="#" class="">Blog</a>
+        </div>
+        <div class="footmid4">
+            <p class="p">Portfolios</p>
+            <a href="#">HackerNews</a>
+            <a href="#" class="">Reddit</a>
+            <a href="#" class="">Twitter</a>
+        </div>
+       </div>
+      </div>
+        
+    </footer>
+    <script>
+        function openNav(){
+            document.getElementById('sidePanel').style.width= '200px';
+        }
+        function closeNav(){
+             document.getElementById('sidePanel').style.width = '0'
+        }
+    </script>
+</body>
+</html>

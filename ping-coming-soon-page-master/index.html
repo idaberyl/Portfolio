@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+ <link rel="stylesheet" href="./stylesheet/style.css">
+</head>
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="Ping's logo">
+  </header>
+  <main>
+    <h1>We are launching<b> soon!</b></h1>
+    <p class="sub-text">Subscribe and get notified</p>
+    <form action="#">
+      <input type="email" name="" id="txtEmail" placeholder="Your email address ...">
+      <span id="error"></span>
+      <input type="submit" value="Notify Me" onclick="validateEmail(this)">
+    </form>
+    <img src="./images/illustration-dashboard.png" alt="illustration-dashboard" class="dashboard">
+    <!-- font-awesome icons are meant to be here -->
+    <div class="font-awesome">
+      <img src="./images/facebook.svg" alt="Facebook Icon" >
+      <img src="./images/twitter.svg" alt="Twitter icon">
+      <img src="./images/instagram.svg" alt="instagram icon">
+    </div>
+  </main>
+  <footer>
+    <p>&copy; Copyright Ping. All rights reserved.</p>
+  </footer>
+<!-- Scripts -->
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fylo Landing page</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./images/logo.svg" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img src="./images/illustration-1.svg" alt="illustration-1" class="illu1">
+        <h1>All your files in one secure location, accessible anywhere.</h1>
+        <p class="t1">Fylo stores your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends, family, and co-workers.
+        </p>
+        <form action="#" name="myform">
+            <input type="email" name="txtemail" id="txtEmail" value="" placeholder="Enter your email">
+            <input type="submit" value="Get Started" onclick="validateEmail(this);"> <br>
+            <span id="error"></span>
+        </form>
+        <img src="./images/illustration-2.svg" alt="illustration-2" class="illu2">
+        <h3>Stay productive, wherever you are</h3>
+        <p class="text">Never let location be an issue when accessing your files. Fylo
+            has you covered for all of your life storage needs.
+        </p>
+        <p class="text">Securely share files and folders with friends,
+            family and colleagues for live collaboration. No email attachments required!
+        </p>
+        <p class="under"><a href="#" >See how Fylo works</a> <img src="./images/icon-arrow.svg" alt="Arrow Icon"></p><hr>
+        <div class="cover">
+        <div class="txtbox">
+            <img src="./images/icon-quotes.svg" alt="Quote icon">
+            <br>
+           <p> Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled collaboration
+            machine.</p> <br>
+            <img src="./images/avatar-testimonial.jpg" class="ava" alt="Kyle's avatar">
+            <h4 class="move">Kyle Burton</h4>
+            <small class="move">Founder &amp; CEO, Huddle</small>
+        </div>
+        </div>
+        <div class="before">
+            <h2>Get early access today</h2>
+            <p>It only takes a minute to sign up and our free starter tier is <br> extremely
+                generous. If you have any questions, our support team <br> would be happy to help you.
+            </p>
+            <form action="#">
+                <input type="email" name="" id="txtEmail" placeholder="Enter your email">
+                <input type="submit" value="Get Started For Free" onclick="validateEmail(this);" >
+                <span id="error"></span>
+            </form>
+        </div>
+    </main>
+   <footer>
+    <img src="./images/logo copy.svg" alt="Fylo's Logo"> <br>
+    <p><img class="mg" src="./images/icon-phone.svg" alt="Phone icon">Phone: +1-543-123-4567</p> <br>
+    <p><img class="mg" src="./images/icon-email.svg" alt="Email icon">example@fylo.com</p>  
+    <nav>
+        <ul class="foot">
+            <li><a href="#">About Us</a></li>
+            
+            <li><a href="#">Jobs</a></li> 
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+        <ul class="foot">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+        </ul>
+    </nav>
+   </footer>
+   <script src="./script.js"></script>
+</body>
+</html>

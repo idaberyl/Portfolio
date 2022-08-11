@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#error{
+    color: hsl(0, 93%, 68%);
+    font-size: 0.8em;
+}
+
+
+
+@media  screen and (min-width : 375px ) and (max-width : 384px) {
+    header{
+        margin-top: 30px;
+    }
+   .logo{
+    width: 30%;
+    margin-bottom: 30px;
+    margin-left: 20px;
+   }
+   
+    .mobile{
+        width: 100%;
+    }
+    #desktop{
+        display: none;
+    }
+    h1{
+        margin-top: 50px;
+        text-align: center;
+        letter-spacing: 8px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        color: hsl(0, 6%, 24%);
+    }
+    h1::first-line{
+        color: hsl(0, 36%, 70%);
+    }
+    .heading-text{
+        background: linear-gradient(135deg, hsl(0, 0%, 100%),  hsl(0, 100%, 98%)) ;
+    }
+    .heading-text p{
+        font-family: cursive;
+        margin-left: 8px;
+        margin-right: 8px;
+        font-size: 12.5px;
+        text-align: center;
+        color: hsl(0, 36%, 70%);
+        margin-bottom: 20px;
+    }
+    input[type = "email"]{
+        padding: 14px;
+        width: 80%;
+        margin-left: 40px;
+        border-radius: 20px;
+        border: 1px solid hsl(0, 36%, 70%);
+    }
+    input[type = "email"]::placeholder{
+        color: hsl(0, 36%, 70%);
+        font-family: cursive;
+        padding-left: 15px;
+    }
+    .arrow-icon{
+        background : linear-gradient(135deg, hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+        padding: 12.5px;
+        border-radius: 20px;
+        position: relative;
+        bottom: 45px;
+        left: 304px;
+        cursor: pointer;
+    }
+    .arrow-icon:hover{
+        opacity: 0.8;
+    }
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1440px)  {
+    #desktop {
+        width: 36.7%;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .mobile{
+        display: none ;
+    }
+    .logo{
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+    main{
+        margin-left: 100px; 
+    }
+    h1{
+        margin-top: 50px;
+        text-align: left;
+        font-size: 4em;
+        letter-spacing: 8px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        color: hsl(0, 6%, 24%);
+    }
+    h1::first-line{
+        color: hsl(0, 36%, 70%);
+    }
+    /* .heading-text{
+        background: linear-gradient(135deg, hsl(0, 0%, 100%) , hsl(0, 100%, 98%)) ;
+    } */
+    .heading-text p{
+        font-family: cursive;
+        margin-top: 30px;
+        font-size: 1em;
+        text-align: left;
+        color: hsl(0, 36%, 70%);
+        margin-bottom: 20px;
+    }
+    input{
+        outline: none;
+    }
+    input[type = "email"]{
+        padding: 14px;
+        width: 32%;
+        border-radius: 20px;
+        border: 1px solid hsl(0, 36%, 70%);
+    }
+    input[type = "email"]::placeholder{
+        color: hsl(0, 36%, 70%);
+        font-family: cursive;
+        padding-left: 15px;
+    }
+    input[type = "email"]:invalid{
+        border: 1px solid hsl(0, 93%, 68%);
+    }
+    .arrow-icon{
+        background : linear-gradient(135deg, hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+        padding: 12.5px;
+        border-radius: 20px;
+        position: relative;
+        bottom: -18px;
+        right: 38px;
+        cursor: pointer;
+    }
+    .arrow-icon:hover{
+        opacity: 0.8;
+    }
+}

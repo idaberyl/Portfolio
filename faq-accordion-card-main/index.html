@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+   <link rel="stylesheet" href="./stylesheet/style.css">
+</head>
+<body>
+  <main>
+    <img src="./images/bg-pattern-desktop.svg" alt="Background" class="desktop">
+    <img src="./images/bg-pattern-mobile.svg" alt="Background" class="mobile">
+    <img src="./images/illustration-woman-online-desktop.svg" class="desktop1"  alt="">
+    <img src="./images/illustration-box-desktop.svg" alt="" class="desktop3">
+    <img src="./images/illustration-woman-online-mobile.svg" class="mobile1" alt="">
+
+     <div class="accord">
+      <h1>FAQ</h1>
+     <p class="accordion">How many team members can I invite?</p>
+     <div class="panel">
+      <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
+        team members for the Premium plan.</p>
+     </div>
+       <hr>
+     <p class="accordion">What is the maximum file upload size?</p>
+     <div class="panel">
+      <p> No more than 2GB. All files in your account must fit your allotted storage space.</p>
+     </div>
+      <hr>
+
+     <p class="accordion">How do I reset my password ?</p>
+     <div class="panel">
+      <p> Click “Forgot password” from the login page or “Change password” from your profile page.
+        A reset link will be emailed to you.
+      </p>
+     </div>
+      <hr>
+
+     <p class="accordion"> Can I cancel my subscription?</p>
+     <div class="panel">
+      <p> Yes! Send us a message and we'll process your request no questions asked.</p>
+     </div>
+
+      <hr>
+     <p class="accordion">Do you provide additional support?</p>
+     <div class="panel">
+      <p> Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+     </div>
+     <hr>
+    </div>
+  </main>
+  <!-- Scripts -->
+  <script >
+    var acc = document.getElementsByClassName('accordion');
+    var i;
+    for(i = 0; i< acc.length; i++){
+      acc[i].addEventListener('click', function(){
+        this.classList.toggle('active');
+        var panel = this.nextElementSibling;
+        if(panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+          accordion.style.fontWeight = 700;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + 'px';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

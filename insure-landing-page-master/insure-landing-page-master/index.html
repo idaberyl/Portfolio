@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./stylesheet/style.css" />
+
+    <title>Frontend Mentor | Insure landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="Insure-logo" />
+
+      <nav class="sidenav" id="sidePanel">
+        <a href="#"
+        ><button onclick="closeNav()" class="closeham">&times;</button></a
+      >
+        <ul>
+          <li><a href="#">HOW WE WORK</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">ACCOUNT</a></li>
+        </ul>
+        <button class="header">VIEW PLANS</button>
+      </nav>
+
+      <a href="#"
+        ><img
+          src="./images/icon-hamburger.svg"
+          alt=""
+          class="hamnav"
+          onclick="openNav()"
+      /></a>
+      
+    </header>
+    <main>
+      <div class="image-wrapper">
+        <img src="./images/image-intro-mobile.jpg" class="mobile" alt="" />
+        <section class="first">
+          <!-- <img src="./images/image-intro-mobile.jpg" class="mobile" alt=""> -->
+          <!-- <hr> -->
+          <h1>
+            Humanizing <br />
+            your insurance.
+          </h1>
+          <p class="text">
+            Get your life insurance coverage easier and faster. We blend our
+            expertise <br />
+            and technology to help you find the plan that's right for you.
+            Ensure you <br />
+            and your loved ones are protected.
+          </p>
+          <button class="btn">VIEW PLANS</button>
+          <img src="./images/image-intro-desktop.jpg" class="desktop" alt="" />
+        </section>
+      </div>
+
+      <div class="image-wrapper2">
+        <section class="second">
+          <h2>We’re different</h2>
+          <div class="grid-display">
+            <div class="display1">
+              <img
+                src="./images/icon-snappy-process.svg"
+                class="adjust"
+                alt=""
+              />
+              <h4>Snappy Process</h4>
+              <p class="undertext">
+                Our application process can be completed in <br />
+                minutes, not hours. Don’t get stuck filling in <br />
+                tedious forms.
+              </p>
+            </div>
+            <div class="display2">
+              <img
+                src="./images/icon-affordable-prices.svg"
+                class="adjust"
+                alt=""
+              />
+              <h4>Affordable Prices</h4>
+              <p class="undertext">
+                We don’t want you worrying about high monthly <br />
+                costs. Our prices may be low, but we still offer <br />
+                the best coverage possible.
+              </p>
+            </div>
+            <div class="display3">
+              <img src="./images/icon-people-first.svg" class="adjust" alt="" />
+              <h4>People First</h4>
+              <p class="undertext">
+                Our plans aren’t full of conditions and clauses <br />
+                to prevent payouts. We make sure you’re <br />
+                covered when you need it.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="third">
+        <div class="image-wrapper3">
+          <h3>
+            Find out more <br />
+            about how we work
+          </h3>
+          <button class="last">How we work</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="foothead">
+        <img src="./images/logo.svg" alt="" class="logox" />
+        <div class="socials">
+          <img src="./images/icon-facebook.svg" alt="" />
+          <img src="./images/icon-twitter.svg" alt="" />
+          <img src="./images/icon-pinterest.svg" alt="" />
+          <img src="./images/icon-instagram.svg" alt="" />
+        </div>
+      </div>
+      <hr />
+      <div class="footbody">
+        <div class="foot1">
+          <p class="undertext">OUR COMPANY</p>
+          <ul>
+            <li><a href="#">HOW WE WORK</a></li>
+            <li><a href="#">WHY INSURE ?</a></li>
+            <li><a href="#">VIEW PLANS</a></li>
+            <li><a href="#">REVIEWS</a></li>
+          </ul>
+        </div>
+        <div class="foot2">
+          <p class="undertext">HELP ME</p>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">TERMS OF USE</a></li>
+            <li><a href="#">PRIVACY POLICY</a></li>
+            <li><a href="#">COOKIES</a></li>
+          </ul>
+        </div>
+        <div class="foot3">
+          <p class="undertext">CONTACT</p>
+          <ul>
+            <li><a href="#">SALES</a></li>
+            <li><a href="#">SUPPORT</a></li>
+            <li><a href="#">LIVE CHAT</a></li>
+          </ul>
+        </div>
+        <div class="foot4">
+          <p class="undertext">OTHERS</p>
+          <ul>
+            <li><a href="#">CAREERS</a></li>
+            <li><a href="#">PRESS</a></li>
+            <li><a href="#">LICENSES</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">NitaXx</a>.
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+body{
+    background: linear-gradient(90deg, rgb(250, 210, 250), white );
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 25px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    display: inline-flex;
+}
+button{
+    background-color: rgb(78, 78, 224);
+    color: white;
+    border: none;
+    padding: 15px;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.feed{
+    width: 45%;
+    float: right;
+    margin-top: -120px;
+}
+h1{
+    margin-top: 180px;
+    line-height: 70px;
+    font-size: 4em;
+}
+.subhead{
+    margin-top: 20px;
+    line-height: 25px;
+}
+.tails{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.head{
+    margin-top: -10px;
+}
+span{
+    color: rgb(78, 78, 224);
+    font-weight: 500;
+}
+.main2{
+    margin-top: 20em;
+}
+.social{
+    width: 40%;
+    float: right;
+}
+h3{
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+.subtext{
+    margin-bottom: 15px;
+}
+.link a{
+    color: rgb(78, 78, 224);
+}
+.phone{
+    margin-top:10em;
+    width: 50%;
+}
+.submain{
+    float: right;
+    margin-top: -30em;
+}
+h2{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.subhead2{
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+footer{
+    margin-top: 10em;
+}
+.p{
+    font-weight: 700;
+   
+}
+.down{
+    margin-top: 30px;
+}
+
+@media screen and (min-width : 320px) and (max-width: 520px){
+    body{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .feed{
+        width: 100%;
+        margin-right: 20px;
+    }
+    h1{
+        font-size: 2.5em;
+        line-height: 40px;
+    }
+    .hamnav{
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        font-size: 30px;
+    }
+    .Sidenav{
+        height: 100%;
+        width: 0;
+        background-color: wheat;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    .Sidenav li{
+        padding-top: 40px;
+        padding-left: 30px;
+    }
+    .closebtn{
+        font-size: 40px;
+        position: relative;
+        top: 0;
+        left: 30px;
+    }
+    .Sidenav a{
+        display: block;
+    }
+    .social{
+        float: none;
+        width: 100%;
+    }
+    .main2{
+        margin-top: 100px;
+    }
+    h3{
+        margin-top: 20px;
+    }
+    .phone{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .submain{
+        margin-top: 40px;
+    }
+     nav{
+        display: block;
+     }
+    .head{
+        height: 10%;
+        margin-top: 40px;
+        padding: 15px;
+        margin-left: 20px;
+        width: 80%;
+    }
+    footer{
+        margin-top: 420px;
+        display: block;
+        font-size: 0.9em;
+    }
+    .footmid> a{
+        display: block;
+        
+    }
+    .footmid2 > a{
+        display: block;
+    }
+    .footmid3 > a{
+        display: block;
+    }
+    .footmid4 > a{
+        display: block;
+    }
+    .footmidd, .footfoot{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: auto auto;
+        /* column-gap: 150px; */
+    }
+    .subhead{
+        font-size: 1.1em;
+    }
+}
+@media screen  and (min-width : 600px) and (max-width : 992px){
+    body{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    br{
+        display: none;
+    }
+    .hamnav, .closebtn{
+        display: none;
+    }
+    a{
+        position: relative;
+        top: 10px;
+          
+    }
+    li{
+        padding-right: 10px;
+    }
+  .head{
+      padding: 10px;
+      position: relative;
+      top: 5px;
+  }
+  main{
+    margin-top: 30px;
+  }
+  h1{
+    margin-top: 330px;
+  }
+  .feed{
+    margin-top: -230px;
+    margin-right: 120px;
+  }
+  p{
+    font-size: 1.3em;
+  }
+  .ava{
+    display: block;
+  }
+  .main2{
+    margin-top: 170px;
+  }
+  .phone{
+    float: left;
+  }
+ 
+  .submain{
+    margin-top: 250px;
+    float: none;
+  }
+ .social{
+    margin-top: 40px;
+ }
+ footer{
+    margin-top: 420px;
+    display: block;
+    font-size: 0.9em;
+}
+.footmid> a{
+    display: block;
+    
+}
+.footmid2 > a{
+    display: block;
+}
+.footmid3 > a{
+    display: block;
+}
+.footmid4 > a{
+    display: block;
+}
+.footmidd, .footfoot{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* column-gap: 150px; */
+}
+.subhead{
+    font-size: 1.1em;
+}
+}
+@media screen and (min-width: 1024px) and (max-width : 1440px){
+    .hamnav, .closebtn{
+        display: none;
+    }
+    .footheader{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+    .footmid > a{
+        display: block;
+        line-height: 29px;
+    }
+    .footmid2 > a{
+        display: block;
+        line-height: 29px;
+    }
+    .footmid3 > a{
+        display: block;
+        line-height: 29px;
+    }
+    .footmid4 > a{
+        display: block;
+        line-height: 29px;
+    }
+    .footmidd, .footfoot{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
