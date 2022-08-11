@@ -93,7 +93,7 @@ header{
     font-size: 0.7em;
   }
 }
-@media screen and (min-width : 576px) and (max-width : 768px ) {
+@media screen and (max-width : 576px) and (max-width : 768px ) {
     h1{
         font-weight: 100;
         margin-top: 30px;
